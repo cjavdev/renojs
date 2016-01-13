@@ -10,6 +10,23 @@ http://www.objectplayground.com/
 + Approach four: `Object.create`
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Approach 1: Instance of parent as prototype (flawed)
 
 ```javascript
@@ -29,6 +46,17 @@ Q: What is the `Cat` prototypes name? What if the Animal constructor required
 `name`?
 
 
+
+
+
+
+
+
+
+
+
+
+
 ## Approach II: Parent and child share prototype (flawed)
 
 ```javascript
@@ -44,6 +72,12 @@ Cat.prototype = Animal.prototype
 
 **Cons**: Changes to `Cat` will be applied to `Animal`. :( Not all `Animal`'s
 `meow`.
+
+
+
+
+
+
 
 
 ## Approach C: Child prototype's __proto__ points at Parent prototype
@@ -67,6 +101,16 @@ prototype. Lookup works.
 **Cons**: Confusing.
 
 
+
+
+
+
+
+
+
+
+
+
 ## Class Syntax (ES6)
 
 ```javascript
@@ -85,6 +129,17 @@ class Cat extends Animal {
 
 **Pros**: Less verbose, more familiar syntax.
 **Cons**: Not fully supported.
+
+
+
+
+
+
+
+
+
+
+
 
 ## Approach four: `Object.create`
 
